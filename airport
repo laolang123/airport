@@ -5,207 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU 001, server: aulin001.xmrth-node.xyz, port: 10131, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CA 001, server: calin001.xmrth-node.xyz, port: 10290, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: DE 001, server: delin001.xmrth-node.xyz, port: 10289, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 001, server: hkaz001.xmrth-node.xyz, port: 10163, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 002, server: hkaz002.xmrth-node.xyz, port: 10281, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 003, server: hkaz003.xmrth-node.xyz, port: 10002, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 004, server: hkaz004.xmrth-node.xyz, port: 10003, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 005, server: hkaz005.xmrth-node.xyz, port: 10276, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 006, server: hkaz006.xmrth-node.xyz, port: 10037, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 007, server: hkaz007.xmrth-node.xyz, port: 10296, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 008, server: hkaz008.xmrth-node.xyz, port: 10287, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 009, server: hkaz009.xmrth-node.xyz, port: 10275, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 010, server: hkaz010.xmrth-node.xyz, port: 10283, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 101, server: hkaz1.xmrth-node.xyz, port: 10128, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 102, server: hkaz2.xmrth-node.xyz, port: 10231, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 103, server: hkaz3.xmrth-node.xyz, port: 10305, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 105, server: hkaz5.xmrth-node.xyz, port: 10077, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 106, server: hkaz6.xmrth-node.xyz, port: 10248, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 107, server: hkaz7.xmrth-node.xyz, port: 10162, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 201, server: hgc1.xmrth-node.xyz, port: 10322, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 001, server: jpaws001.xmrth-node.xyz, port: 10309, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 002, server: jpaws002.xmrth-node.xyz, port: 10284, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 003, server: jplin003.xmrth-node.xyz, port: 10311, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 004, server: jplin004.xmrth-node.xyz, port: 10043, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 005, server: jplin005.xmrth-node.xyz, port: 10261, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 006, server: jpaws006.xmrth-node.xyz, port: 10256, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 101, server: jpaz1.xmrth-node.xyz, port: 10052, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 102, server: jpaz2.xmrth-node.xyz, port: 10142, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 103, server: jpaz3.xmrth-node.xyz, port: 10385, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 001, server: kraws001.xmrth-node.xyz, port: 10345, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 002, server: kraws002.xmrth-node.xyz, port: 10359, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 003, server: kraws003.xmrth-node.xyz, port: 10264, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 004, server: kraws004.xmrth-node.xyz, port: 10265, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 005, server: kraws005.xmrth-node.xyz, port: 10378, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 006, server: kraws006.xmrth-node.xyz, port: 10277, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 007, server: kraws007.xmrth-node.xyz, port: 10312, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 001, server: sgaws001.xmrth-node.xyz, port: 10310, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 002, server: sgaws002.xmrth-node.xyz, port: 10156, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 003, server: sgaws003.xmrth-node.xyz, port: 10271, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 004, server: sgaws004.xmrth-node.xyz, port: 10272, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 005, server: sgaws005.xmrth-node.xyz, port: 10269, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 006, server: sgaws006.xmrth-node.xyz, port: 10267, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 007, server: sgaws007.xmrth-node.xyz, port: 10268, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: UK 001, server: uklin001.xmrth-node.xyz, port: 10049, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: UK 002, server: ukaws002.xmrth-node.xyz, port: 10292, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 001, server: inap001.xmrth-node.xyz, port: 10388, type: vmess, uuid: 1fe7401f-720d-3f9d-9681-2ce296b5230b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港01-高速, server: hk.youzi.win, port: 27771, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: 韩国01-高速, server: kr.youzi.win, port: 27772, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: 新加坡01-高速, server: sg.youzi.win, port: 27773, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: 美国01-高速, server: us.youzi.win, port: 27774, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -224,211 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港01-高速
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -444,52 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU 001
-      - CA 001
-      - DE 001
-      - HK 001
-      - HK 002
-      - HK 003
-      - HK 004
-      - HK 005
-      - HK 006
-      - HK 007
-      - HK 008
-      - HK 009
-      - HK 010
-      - HK 101
-      - HK 102
-      - HK 103
-      - HK 105
-      - HK 106
-      - HK 107
-      - HK 201
-      - JP 001
-      - JP 002
-      - JP 003
-      - JP 004
-      - JP 005
-      - JP 006
-      - JP 101
-      - JP 102
-      - JP 103
-      - KR 001
-      - KR 002
-      - KR 003
-      - KR 004
-      - KR 005
-      - KR 006
-      - KR 007
-      - SG 001
-      - SG 002
-      - SG 003
-      - SG 004
-      - SG 005
-      - SG 006
-      - SG 007
-      - UK 001
-      - UK 002
-      - US 001
+      - 香港01-高速
+      - 韩国01-高速
+      - 新加坡01-高速
+      - 美国01-高速
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
