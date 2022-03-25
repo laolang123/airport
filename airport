@@ -5,39 +5,215 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港01-高速, server: hk.youzi.win, port: 27771, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 韩国01-高速, server: kr.youzi.win, port: 27772, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 新加坡01-高速, server: sg.youzi.win, port: 27773, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 美国01-高速, server: us.youzi.win, port: 27774, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: "[AZ]甲骨文瑞士ARM", server: 23.99.123.83, port: 8025, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: "[AWS北京]摩尔多瓦", server: 52.80.203.54, port: 20835, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
+  - {name: "[AZ]dedipath美国100M", server: 23.99.123.83, port: 8020, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
+  - {name: "[AZ]vir美国", server: 23.99.123.83, port: 8014, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: vir.oracleusa.ml}, udp: true}
+  - {name: "[AZ]俄罗斯JustHost", server: 23.99.123.83, port: 8015, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
+  - {name: "[AZ]摩尔多瓦", server: 23.99.123.83, port: 8017, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
+  - {name: "[AZ]瑞士甲骨文AMD", server: 23.99.123.83, port: 8013, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
+  - {name: "[AZ]甲骨文以色列耶路撒冷", server: 23.99.119.36, port: 8045, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: je.oracleusa.ml}, udp: true}
+  - {name: "[AZ]甲骨文新加坡", server: 23.99.123.83, port: 8022, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
+  - {name: "[AZ]甲骨文韩国春川", server: 23.99.123.83, port: 8018, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
+  - {name: "[AZ]美国甲骨文ARM", server: 23.99.123.83, port: 8016, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: "[AZ]美国甲骨文圣何塞AMD", server: 23.99.123.83, port: 8019, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
+  - {name: "[CF]俄罗斯JustHost", server: ru2.gfwglass.tk, port: 443, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
+  - {name: "[CF]俄罗斯RUVDS", server: ru.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.oracleusa.ml}, udp: true}
+  - {name: "[CF]德国甲骨文ARM", server: de.oracleusa.ml, port: 443, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: de.oracleusa.ml}, udp: true}
+  - {name: "[CF]摩尔多瓦", server: ex.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
+  - {name: "[CF]法国双栈", server: fr.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: fr.oracleusa.ml}, udp: true}
+  - {name: "[CF]甲骨文以色列耶路撒冷", server: je.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: je.oracleusa.ml}, udp: true}
+  - {name: "[CF]甲骨文韩国春川", server: kor.oracleusa.ml, port: 443, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
+  - {name: "[CF]荷兰", server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
+  - {name: "[SGP]dedipath美国100M", server: 20.212.220.101, port: 8007, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
+  - {name: "[SGP]vir美国", server: 20.212.220.101, port: 8001, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
+  - {name: "[SGP]俄罗斯JustHost", server: 20.212.220.101, port: 8002, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
+  - {name: "[SGP]摩尔多瓦", server: 20.212.220.101, port: 8004, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
+  - {name: "[SGP]甲骨文以色列耶路撒冷", server: 20.212.220.101, port: 8055, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: je.oracleusa.ml}, udp: true}
+  - {name: "[SGP]甲骨文新加坡", server: 20.212.220.101, port: 8009, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
+  - {name: "[SGP]甲骨文瑞士AMD", server: 20.212.220.101, port: 8000, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
+  - {name: "[SGP]甲骨文瑞士ARM", server: 20.212.220.101, port: 8012, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: "[SGP]甲骨文韩国春川", server: 20.212.220.101, port: 8005, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
+  - {name: "[SGP]美国甲骨文ARM", server: 20.212.220.101, port: 8003, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: "[SGP]美国甲骨文圣何塞ARM", server: 20.212.220.101, port: 8006, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
+  - {name: "[SGP中转]俄罗斯RUVDS", server: 20.212.220.101, port: 8011, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.oracleusa.ml}, udp: true}
+  - {name: "[广移]vir美国", server: 120.233.147.118, port: 21429, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: vir.oracleusa.ml}, udp: true}
+  - {name: "[广移]俄罗斯JustHost", server: 120.233.147.118, port: 37972, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
+  - {name: "[广移]俄罗斯RUVDS", server: 120.233.147.11, port: 44899, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.oracleusa.ml}, udp: true}
+  - {name: "[广移]摩尔多瓦", server: 120.233.147.118, port: 23142, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
+  - {name: "[广移]瑞士甲骨文AMD", server: 120.233.147.118, port: 61948, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
+  - {name: "[广移]甲骨文新加坡", server: 120.233.147.118, port: 19539, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
+  - {name: "[广移]美国甲骨文ARM", server: 120.233.147.118, port: 56390, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: "[广移]美国甲骨文圣何塞AMD", server: 120.233.147.118, port: 20556, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
+  - {name: "[广移]🇨🇭甲骨文瑞士ARM", server: 120.233.147.118, port: 53962, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: "[直连]dedipath美国100M", server: usa.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
+  - {name: "[直连]瑞士甲骨文AMD", server: sw.gfwglass.tk, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
+  - {name: "[直连]甲骨文新加坡", server: sg.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
+  - {name: "[直连]甲骨文瑞士ARM", server: sw.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: "[直连]美国甲骨文ARM", server: usaarm1.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: "[直连]美国甲骨文圣何塞AMD", server: usaadm.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
+  - {name: "美国节点[3x]", server: usa1.oracleusa.ml, port: 2053, type: vmess, uuid: 9dc67bd8-8c88-35c3-98ce-e0f5c4f0962c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa1.oracleusa.ml}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +232,219 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01-高速
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +460,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01-高速
-      - 韩国01-高速
-      - 新加坡01-高速
-      - 美国01-高速
+      - "[AZ]甲骨文瑞士ARM"
+      - "[AWS北京]摩尔多瓦"
+      - "[AZ]dedipath美国100M"
+      - "[AZ]vir美国"
+      - "[AZ]俄罗斯JustHost"
+      - "[AZ]摩尔多瓦"
+      - "[AZ]瑞士甲骨文AMD"
+      - "[AZ]甲骨文以色列耶路撒冷"
+      - "[AZ]甲骨文新加坡"
+      - "[AZ]甲骨文韩国春川"
+      - "[AZ]美国甲骨文ARM"
+      - "[AZ]美国甲骨文圣何塞AMD"
+      - "[CF]俄罗斯JustHost"
+      - "[CF]俄罗斯RUVDS"
+      - "[CF]德国甲骨文ARM"
+      - "[CF]摩尔多瓦"
+      - "[CF]法国双栈"
+      - "[CF]甲骨文以色列耶路撒冷"
+      - "[CF]甲骨文韩国春川"
+      - "[CF]荷兰"
+      - "[SGP]dedipath美国100M"
+      - "[SGP]vir美国"
+      - "[SGP]俄罗斯JustHost"
+      - "[SGP]摩尔多瓦"
+      - "[SGP]甲骨文以色列耶路撒冷"
+      - "[SGP]甲骨文新加坡"
+      - "[SGP]甲骨文瑞士AMD"
+      - "[SGP]甲骨文瑞士ARM"
+      - "[SGP]甲骨文韩国春川"
+      - "[SGP]美国甲骨文ARM"
+      - "[SGP]美国甲骨文圣何塞ARM"
+      - "[SGP中转]俄罗斯RUVDS"
+      - "[广移]vir美国"
+      - "[广移]俄罗斯JustHost"
+      - "[广移]俄罗斯RUVDS"
+      - "[广移]摩尔多瓦"
+      - "[广移]瑞士甲骨文AMD"
+      - "[广移]甲骨文新加坡"
+      - "[广移]美国甲骨文ARM"
+      - "[广移]美国甲骨文圣何塞AMD"
+      - "[广移]🇨🇭甲骨文瑞士ARM"
+      - "[直连]dedipath美国100M"
+      - "[直连]瑞士甲骨文AMD"
+      - "[直连]甲骨文新加坡"
+      - "[直连]甲骨文瑞士ARM"
+      - "[直连]美国甲骨文ARM"
+      - "[直连]美国甲骨文圣何塞AMD"
+      - 美国节点[3x]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
