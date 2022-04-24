@@ -5,187 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[AZ]甲骨文瑞士ARM", server: 23.99.123.83, port: 8025, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
-  - {name: "[AZ]dedipath美国100M", server: 23.99.123.83, port: 8020, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
-  - {name: "[AZ]vir美国", server: 23.99.123.83, port: 8014, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: vir.oracleusa.ml}, udp: true}
-  - {name: "[AZ]俄罗斯JustHost", server: 23.99.123.83, port: 8015, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
-  - {name: "[AZ]摩尔多瓦", server: 23.99.123.83, port: 8017, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
-  - {name: "[AZ]瑞士甲骨文AMD", server: 23.99.123.83, port: 8013, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
-  - {name: "[AZ]甲骨文以色列耶路撒冷", server: 23.99.119.36, port: 8045, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: je.oracleusa.ml}, udp: true}
-  - {name: "[AZ]甲骨文新加坡", server: 23.99.123.83, port: 8022, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
-  - {name: "[AZ]甲骨文阿联酋", server: 23.99.123.83, port: 8021, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
-  - {name: "[AZ]甲骨文韩国春川", server: 23.99.123.83, port: 8018, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
-  - {name: "[AZ]美国甲骨文ARM", server: 23.99.123.83, port: 8016, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
-  - {name: "[AZ]美国甲骨文圣何塞AMD", server: 23.99.123.83, port: 8019, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
-  - {name: "[CF]俄罗斯JustHost", server: ru2.gfwglass.tk, port: 443, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
-  - {name: "[CF]俄罗斯RUVDS", server: ru.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.oracleusa.ml}, udp: true}
-  - {name: "[CF]德国甲骨文ARM", server: de.oracleusa.ml, port: 443, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: de.oracleusa.ml}, udp: true}
-  - {name: "[CF]摩尔多瓦", server: ex.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
-  - {name: "[CF]法国双栈", server: fr.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: fr.oracleusa.ml}, udp: true}
-  - {name: "[CF]甲骨文以色列耶路撒冷", server: je.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: je.oracleusa.ml}, udp: true}
-  - {name: "[CF]甲骨文韩国春川", server: kor.oracleusa.ml, port: 443, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
-  - {name: "[CF]荷兰", server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
-  - {name: "[SGP]dedipath美国100M", server: 20.212.220.101, port: 8007, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
-  - {name: "[SGP]vir美国", server: 20.212.220.101, port: 8001, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
-  - {name: "[SGP]俄罗斯JustHost", server: 20.212.220.101, port: 8002, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru2.gfwglass.tk}, udp: true}
-  - {name: "[SGP]摩尔多瓦", server: 20.212.220.101, port: 8004, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
-  - {name: "[SGP]甲骨文以色列耶路撒冷", server: 20.212.220.101, port: 8055, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: je.oracleusa.ml}, udp: true}
-  - {name: "[SGP]甲骨文新加坡", server: 20.212.220.101, port: 8009, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
-  - {name: "[SGP]甲骨文瑞士AMD", server: 20.212.220.101, port: 8000, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
-  - {name: "[SGP]甲骨文瑞士ARM", server: 20.212.220.101, port: 8012, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
-  - {name: "[SGP]甲骨文韩国春川", server: 20.212.220.101, port: 8005, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: kor.oracleusa.ml}, udp: true}
-  - {name: "[SGP]美国甲骨文ARM", server: 20.212.220.101, port: 8003, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
-  - {name: "[SGP]美国甲骨文圣何塞ARM", server: 20.212.220.101, port: 8006, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
-  - {name: "[SGP]🇦🇪甲骨文阿联酋", server: 20.212.220.101, port: 8008, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
-  - {name: "[SGP中转]俄罗斯RUVDS", server: 20.212.220.101, port: 8011, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ru.oracleusa.ml}, udp: true}
-  - {name: "[直连]dedipath美国100M", server: usa.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
-  - {name: "[直连]瑞士甲骨文AMD", server: sw.gfwglass.tk, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
-  - {name: "[直连]甲骨文新加坡", server: sg.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
-  - {name: "[直连]甲骨文瑞士ARM", server: sw.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
-  - {name: "[直连]甲骨文阿联酋", server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
-  - {name: "[直连]美国甲骨文ARM", server: usaarm1.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
-  - {name: "[直连]美国甲骨文圣何塞AMD", server: usaadm.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
-  - {name: "美国节点[3x]", server: usa1.oracleusa.ml, port: 2053, type: vmess, uuid: 6e782fc9-ad49-38a2-a3c2-225cc3c80992, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa1.oracleusa.ml}, udp: true}
+  - {name: 02-HK 限50Mbps, server: tj-02.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-02.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 03-HK 限50Mbps, server: tj-03.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-03.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 04-HK 限50Mbps, server: tj-04.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-04.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 05-KR, server: tj-05.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-05.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 06-KR, server: tj-06.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-06.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 07-KR, server: tj-07.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-07.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 08-KR, server: tj-08.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-08.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 10-SG-DigitalOcean, server: tj-10.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-10.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 11-SG-DigitalOcean, server: tj-11.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-11.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 12-SG-DigitalOcean, server: tj-12.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-12.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 13-US-DigitalOcean, server: tj-13.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-13.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 14-US-DigitalOcean, server: tj-14.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-14.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 15-US-DigitalOcean, server: tj-15.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-15.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 16-HK-Azure  限50Mbps, server: tj-16.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-16.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 20-JP-Linode, server: tj-20.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-20.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: 21-JP-Linode, server: tj-21.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-21.t8737.shop, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,47 +104,22 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -255,140 +130,65 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -404,47 +204,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[AZ]甲骨文瑞士ARM"
-      - "[AZ]dedipath美国100M"
-      - "[AZ]vir美国"
-      - "[AZ]俄罗斯JustHost"
-      - "[AZ]摩尔多瓦"
-      - "[AZ]瑞士甲骨文AMD"
-      - "[AZ]甲骨文以色列耶路撒冷"
-      - "[AZ]甲骨文新加坡"
-      - "[AZ]甲骨文阿联酋"
-      - "[AZ]甲骨文韩国春川"
-      - "[AZ]美国甲骨文ARM"
-      - "[AZ]美国甲骨文圣何塞AMD"
-      - "[CF]俄罗斯JustHost"
-      - "[CF]俄罗斯RUVDS"
-      - "[CF]德国甲骨文ARM"
-      - "[CF]摩尔多瓦"
-      - "[CF]法国双栈"
-      - "[CF]甲骨文以色列耶路撒冷"
-      - "[CF]甲骨文韩国春川"
-      - "[CF]荷兰"
-      - "[SGP]dedipath美国100M"
-      - "[SGP]vir美国"
-      - "[SGP]俄罗斯JustHost"
-      - "[SGP]摩尔多瓦"
-      - "[SGP]甲骨文以色列耶路撒冷"
-      - "[SGP]甲骨文新加坡"
-      - "[SGP]甲骨文瑞士AMD"
-      - "[SGP]甲骨文瑞士ARM"
-      - "[SGP]甲骨文韩国春川"
-      - "[SGP]美国甲骨文ARM"
-      - "[SGP]美国甲骨文圣何塞ARM"
-      - "[SGP]🇦🇪甲骨文阿联酋"
-      - "[SGP中转]俄罗斯RUVDS"
-      - "[直连]dedipath美国100M"
-      - "[直连]瑞士甲骨文AMD"
-      - "[直连]甲骨文新加坡"
-      - "[直连]甲骨文瑞士ARM"
-      - "[直连]甲骨文阿联酋"
-      - "[直连]美国甲骨文ARM"
-      - "[直连]美国甲骨文圣何塞AMD"
-      - 美国节点[3x]
+      - 02-HK 限50Mbps
+      - 03-HK 限50Mbps
+      - 04-HK 限50Mbps
+      - 05-KR
+      - 06-KR
+      - 07-KR
+      - 08-KR
+      - 10-SG-DigitalOcean
+      - 11-SG-DigitalOcean
+      - 12-SG-DigitalOcean
+      - 13-US-DigitalOcean
+      - 14-US-DigitalOcean
+      - 15-US-DigitalOcean
+      - 16-HK-Azure  限50Mbps
+      - 20-JP-Linode
+      - 21-JP-Linode
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
