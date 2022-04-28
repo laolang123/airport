@@ -5,115 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: LV0 更多节点请购买套餐, server: lv0.youzi.win, port: 8080, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV0 若不能使用请更新订阅, server: lv0.youzi.win, port: 8080, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 韩国 - realm隧道, server: kr.youzi.win, port: 27772, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 新加坡 - realm隧道, server: sg.youzi.win, port: 27773, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 美国 - realm隧道, server: us.youzi.win, port: 27774, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: fe1f4ed5-adba-4b6d-90c3-e5687d605eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 02-HK 限50Mbps, server: tj-02.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-02.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 03-HK 限50Mbps, server: tj-03.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-03.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 04-HK 限50Mbps, server: tj-04.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-04.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 05-KR, server: tj-05.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-05.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 06-KR, server: tj-06.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-06.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 07-KR, server: tj-07.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-07.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 08-KR, server: tj-08.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-08.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 10-SG-DigitalOcean, server: tj-10.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-10.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 11-SG-DigitalOcean, server: tj-11.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-11.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 12-SG-DigitalOcean, server: tj-12.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-12.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 13-US-DigitalOcean, server: tj-13.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-13.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 14-US-DigitalOcean, server: tj-14.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-14.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 15-US-DigitalOcean, server: tj-15.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-15.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 16-HK-Azure  限50Mbps, server: tj-16.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-16.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 20-JP-Linode, server: tj-20.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-20.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 21-JP-Linode, server: tj-21.t8737.shop, port: 11223, type: trojan, password: 5aa10d12-c469-4a01-ad16-b71cc6817c3b, sni: tj-21.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: HongKong 01, server: api-gzct.malibaba.xyz, port: 10080, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: HongKong 02, server: api-gzct.malibaba.xyz, port: 10081, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: HongKong 03, server: api-gzct.malibaba.xyz, port: 10082, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Japan 01, server: api-02.malibaba.xyz, port: 15563, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-02.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Japan 02, server: api-02.malibaba.xyz, port: 15564, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-02.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Japan 03, server: api-02.malibaba.xyz, port: 15565, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-02.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Singapore 01, server: api-01.malibaba.xyz, port: 31769, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-01.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Singapore 02, server: api-01.malibaba.xyz, port: 38599, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-01.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Singapore 03, server: api-gzct.malibaba.xyz, port: 17099, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Singapore 04, server: api-gzct.malibaba.xyz, port: 18705, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: Singapore 05, server: api-gzct.malibaba.xyz, port: 37071, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: 当前本站所有节点免费，严禁倒卖转售, server: api-gzct.malibaba.xyz, port: 10082, type: trojan, password: 7733b1cb-667e-38d2-816b-7ae74ec32d50, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -132,120 +88,75 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - LV1 香港 - realm隧道
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -261,29 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV0 更多节点请购买套餐
-      - LV0 若不能使用请更新订阅
-      - LV1 香港 - realm隧道
-      - LV1 韩国 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 美国 - realm隧道
-      - LV1 日本 - realm隧道
-      - 02-HK 限50Mbps
-      - 03-HK 限50Mbps
-      - 04-HK 限50Mbps
-      - 05-KR
-      - 06-KR
-      - 07-KR
-      - 08-KR
-      - 10-SG-DigitalOcean
-      - 11-SG-DigitalOcean
-      - 12-SG-DigitalOcean
-      - 13-US-DigitalOcean
-      - 14-US-DigitalOcean
-      - 15-US-DigitalOcean
-      - 16-HK-Azure  限50Mbps
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - HongKong 01
+      - HongKong 02
+      - HongKong 03
+      - Japan 01
+      - Japan 02
+      - Japan 03
+      - Singapore 01
+      - Singapore 02
+      - Singapore 03
+      - Singapore 04
+      - Singapore 05
+      - 当前本站所有节点免费，严禁倒卖转售
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
