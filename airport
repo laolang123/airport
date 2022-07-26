@@ -5,31 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 20-JP-Linode, server: tj-20.t8737.shop, port: 11223, type: trojan, password: 49ff794a-82cc-45d1-82a8-e628adea8427, sni: tj-20.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 21-JP-Linode, server: tj-21.t8737.shop, port: 11223, type: trojan, password: 49ff794a-82cc-45d1-82a8-e628adea8427, sni: tj-21.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: Japan 01, server: jp01.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ae47f8b7-76f8-4db7-bb3e-8897337e7506, udp: true}
+  - {name: Hong Kong 03 | IPLC, server: hk03.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ae47f8b7-76f8-4db7-bb3e-8897337e7506, udp: true}
+  - {name: Hong Kong 01, server: hk01.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ae47f8b7-76f8-4db7-bb3e-8897337e7506, udp: true}
+  - {name: Japan 02, server: jp02.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ae47f8b7-76f8-4db7-bb3e-8897337e7506, udp: true}
+  - {name: Hong Kong 02, server: hk02.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ae47f8b7-76f8-4db7-bb3e-8897337e7506, udp: true}
+  - {name: Korea 01 | IPLC, server: kr01.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ae47f8b7-76f8-4db7-bb3e-8897337e7506, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +64,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +80,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 20-JP-Linode
-      - 21-JP-Linode
+      - Japan 01
+      - Hong Kong 03 | IPLC
+      - Hong Kong 01
+      - Japan 02
+      - Hong Kong 02
+      - Korea 01 | IPLC
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10295,7 +10331,13 @@ rules:
  - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
-iaa.com,🛑 全球拦截
+m,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.yyeks.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.yyjhf.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.yzjlsb.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.zabxb.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.zaoss.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.zeiaa.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.zenffs.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,m.zenwq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.zhuyuanp.club,🛑 全球拦截
@@ -14133,9 +14175,4 @@ iaa.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mindmapper.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,mycleanmymac.com,🛑 全球拦截
  - DOMAIN-SUFFIX,nicelabel.cc,🛑 全球拦截
- - DOMAIN-SUFFIX,ntfsformac.cc,🛑 全球拦截
- - DOMAIN-SUFFIX,ntfsformac.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,overturechina.com,🛑 全球拦截
- - DOMAIN-SUFFIX,passwordrecovery.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,pdfexpert.cc,🛑 全球拦截
- - DOMAIN-SUFFIX,photozoomchina.com,🛑 全球
+ - DOMAIN-SUFFIX,ntfsfor
