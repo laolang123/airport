@@ -5,43 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本联通优化, server: jp2.pepsicola.me, port: 41001, type: trojan, password: 9cc7aca0-3f8c-43ed-a761-29c77faafedb, sni: jp2.pepsicola.me, skip-cert-verify: true, udp: true}
+  - {name: 香港电信优化, server: hk1.pepsicola.me, port: 41001, type: trojan, password: 9cc7aca0-3f8c-43ed-a761-29c77faafedb, sni: hk1.pepsicola.me, skip-cert-verify: true, udp: true}
   - {name: 日本移动优化, server: jp1.pepsicola.me, port: 41001, type: trojan, password: 9cc7aca0-3f8c-43ed-a761-29c77faafedb, sni: jp1.pepsicola.me, skip-cert-verify: true, udp: true}
-  - {name: _YouTube：全网最强白嫖, server: hgc.sharecentre.xyz, port: 120, type: vmess, uuid: be84d85b-cefa-3d44-99f8-8dab4da44f2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nj, ws-headers: {Host: https://t.me/axingTG}, udp: true}
-  - {name: _YouTube：全网最强白嫖 2, server: hk-gz-hk-hkt-v2-b.cdn.savoy.click, port: 888, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: _SG_新加坡, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 日本联通优化, server: jp2.pepsicola.me, port: 41001, type: trojan, password: 9cc7aca0-3f8c-43ed-a761-29c77faafedb, sni: jp2.pepsicola.me, skip-cert-verify: true, udp: true}
+  - {name: 美国1, server: us1.pepsicola.me, port: 41001, type: trojan, password: 9cc7aca0-3f8c-43ed-a761-29c77faafedb, sni: us1.pepsicola.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,47 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港电信优化
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本联通优化
+      - 香港电信优化
       - 日本移动优化
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - _SG_新加坡
+      - 日本联通优化
+      - 美国1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
