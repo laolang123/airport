@@ -5,107 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20113, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 日本2 | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20131, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 香港BPG ②| 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20115, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 美国 | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20133, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 台湾 ② | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20119, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 韩国 | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20129, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 新加坡 ② | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20123, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 香港 HKT | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20111, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 新加坡 ① | 解锁 | V2, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20121, type: vmess, uuid: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou}, udp: true}
-  - {name: 香港 HKT | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20135, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 日本① |  SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20117, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 日本 | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20139, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 香港 BGP③ | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20155, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 新加坡 ① | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20141, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 香港 BGP② | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 新加坡 ② | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20147, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 英国 |  SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20137, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 韩国 | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20152, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 美国 | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20154, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 香港 BGP① | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20157, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
-  - {name: 土耳其 | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20159, type: ss, cipher: chacha20-ietf-poly1305, password: 6aae4cf4-4a84-4e67-a6ed-55f6dcec97e8, udp: true}
+  - {name: 「🇭🇰」专属八「解锁」✰, server: zp.i809.ml, port: 32087, type: trojan, password: 0462dc4e-6200-4b95-98e8-db83d291fe09, sni: zp.i809.ml, skip-cert-verify: true, udp: true}
+  - {name: 「🇭🇰」辟邪剑「中转」✰✰✰, server: pf.i809.ml, port: 12096, type: trojan, password: 0462dc4e-6200-4b95-98e8-db83d291fe09, sni: pf.i809.ml, skip-cert-verify: true, udp: true}
+  - {name: 「🇸🇬」打神石「中转」✰, server: zf.i809.ml, port: 32096, type: trojan, password: 0462dc4e-6200-4b95-98e8-db83d291fe09, sni: zf.i809.ml, skip-cert-verify: true, udp: true}
+  - {name: 「🇨🇳」神卐器「SLB」★★, server: vf.i809.ml, port: 48443, type: trojan, password: 0462dc4e-6200-4b95-98e8-db83d291fe09, sni: vf.i809.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -124,118 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港BPG ②| 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -251,27 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 | 解锁 | V2
-      - 日本2 | 解锁 | V2
-      - 香港BPG ②| 解锁 | V2
-      - 美国 | 解锁 | V2
-      - 台湾 ② | 解锁 | V2
-      - 韩国 | 解锁 | V2
-      - 新加坡 ② | 解锁 | V2
-      - 香港 HKT | 解锁 | V2
-      - 新加坡 ① | 解锁 | V2
-      - 香港 HKT | 解锁 | SS
-      - 日本① |  SS
-      - 日本 | 解锁 | SS
-      - 香港 BGP③ | 解锁 | SS
-      - 新加坡 ① | 解锁 | SS
-      - 香港 BGP② | 解锁 | SS
-      - 新加坡 ② | 解锁 | SS
-      - 英国 |  SS
-      - 韩国 | 解锁 | SS
-      - 美国 | 解锁 | SS
-      - 香港 BGP① | 解锁 | SS
-      - 土耳其 | 解锁 | SS
+      - 「🇭🇰」专属八「解锁」✰
+      - 「🇭🇰」辟邪剑「中转」✰✰✰
+      - 「🇸🇬」打神石「中转」✰
+      - 「🇨🇳」神卐器「SLB」★★
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
