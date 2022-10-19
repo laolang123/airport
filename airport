@@ -10,11 +10,13 @@ proxies:
   - {name: Level1 Japan 03, server: 172.104.125.96, port: 8080, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: Level1 Japan 04, server: 172.104.125.118, port: 8080, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: Level1 Japan 05, server: 172.104.112.66, port: 8080, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Level1 United States 01, server: 107.174.186.134, port: 43899, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Level1 United States 02, server: 107.172.216.83, port: 33899, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Level1 United States 03, server: 173.82.135.39, port: 33899, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Level1 United States 04, server: 198.211.37.52, port: 43899, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Level1 United States 05, server: 144.126.215.159, port: 33899, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国01-CF, server: us1.pickmovie.me, port: 2053, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us1.pickmovie.me}, udp: true}
+  - {name: 美国02-CF, server: us2.pickmovie.me, port: 2053, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.pickmovie.me}, udp: true}
+  - {name: 美国03-CF, server: us3.pickmovie.me, port: 443, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us3.pickmovie.me}, udp: true}
+  - {name: 美国04-CF, server: us4.mailpost77.xyz, port: 2053, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us4.mailpost77.xyz}, udp: true}
+  - {name: Level1 United States 06, server: 137.184.121.116, port: 33899, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Level1 United States 07, server: 47.87.157.148, port: 80, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Level2 Singapore 02, server: 112.30.145.40, port: 42103, type: vmess, uuid: 90505a79-a0ab-4804-ac67-e03c4e00e0c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -26,11 +28,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -41,11 +45,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -57,11 +63,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -85,11 +93,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -105,11 +115,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: 📲 电报信息
     type: select
     proxies:
@@ -120,11 +132,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -136,11 +150,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,11 +177,13 @@ proxy-groups:
       - Level1 Japan 03
       - Level1 Japan 04
       - Level1 Japan 05
-      - Level1 United States 01
-      - Level1 United States 02
-      - Level1 United States 03
-      - Level1 United States 04
-      - Level1 United States 05
+      - 美国01-CF
+      - 美国02-CF
+      - 美国03-CF
+      - 美国04-CF
+      - Level1 United States 06
+      - Level1 United States 07
+      - Level2 Singapore 02
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
