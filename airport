@@ -12,6 +12,7 @@ dns:
     - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
+    
 proxies:
   - {"name":"洛杉矶1","type":"hysteria","server":"173.234.25.51","port":42479,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongadlkdjafidjdfaodfadfdf","up":11,"down":55}
   - {"name":"洛杉矶3","type":"hysteria","server":"167.160.90.251","port":57058,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"kZhIP6IGCQqqvp9a3Ym7JnMHjH9OkpqfmiaPHJauCvrsTHqsE8","up":11,"down":55}
