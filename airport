@@ -12,20 +12,14 @@ dns:
     - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
-    
+
 proxies:
   - {"name":"洛杉矶1","type":"hysteria","server":"173.234.25.51","port":42479,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongadlkdjafidjdfaodfadfdf","up":11,"down":55}
-  
+  - {"name":"洛杉矶2","type":"hysteria","server":"104.149.148.219","port":34753,"sni":"www.paypal.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"sWZ27pSm6mZb9MiFmde4dSNyBToBd02UTm2RgrZJfFDkhSSZWU","up":11,"down":55}
   - {"name":"洛杉矶3","type":"hysteria","server":"167.160.90.251","port":57058,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"kZhIP6IGCQqqvp9a3Ym7JnMHjH9OkpqfmiaPHJauCvrsTHqsE8","up":11,"down":55}
-  
-  - {"name":"洛杉矶5","type":"hysteria","server":"104.149.153.91","port":10802,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ryr93NBZcQneXUrlB9MX6RR414GPrsgJLHcecA9X6z0sazuHVC","up":11,"down":88}
-  
   - {"name":"洛杉矶4","type":"hysteria","server":"167.160.91.115","port":18451,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"3dfFiSw04wSzShODercubpxjOMoKV3zElm8e0QqD6pDR1Bvepg","up":11,"down":55}
-  
-   - {"name":"洛杉矶2","type":"hysteria","server":"104.149.148.219","port":34753,"sni":"www.paypal.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"sWZ27pSm6mZb9MiFmde4dSNyBToBd02UTm2RgrZJfFDkhSSZWU","up":11,"down":55}
-   
-   - {"name":"洛杉矶6","type":"hysteria","server":"104.149.155.29","port":13150,"sni":"www.amazon.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"BZsZtkDdcVqYq6UXqADVNLIrPIMCpBcAeYpspfJk1KJrVxgkxq","up":11,"down":55}
-   
+  - {"name":"洛杉矶5","type":"hysteria","server":"104.149.153.91","port":10802,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ryr93NBZcQneXUrlB9MX6RR414GPrsgJLHcecA9X6z0sazuHVC","up":11,"down":88}
+  - {"name":"洛杉矶6","type":"hysteria","server":"104.149.155.29","port":13150,"sni":"www.amazon.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"BZsZtkDdcVqYq6UXqADVNLIrPIMCpBcAeYpspfJk1KJrVxgkxq","up":11,"down":55}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,11 +27,12 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
+
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -45,10 +40,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
   - name: 🌍 国外媒体
     type: select
@@ -57,21 +52,21 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
+      - 洛杉矶1 
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
   - name: Ⓜ️ 微软服务
     type: select
@@ -79,10 +74,10 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
   - name: 🍎 苹果服务
     type: select
@@ -90,10 +85,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
   - name: 🎯 全球直连
     type: select
@@ -118,10 +113,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 洛杉矶1
-      - 洛杉矶3
-      - 洛杉矶5
-      - 洛杉矶4
       - 洛杉矶2
+      - 洛杉矶3
+      - 洛杉矶4
+      - 洛杉矶5
       - 洛杉矶6
 
 rules:
