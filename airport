@@ -1,17 +1,23 @@
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
+mode: Rule
 log-level: info
-external-controller: 0.0.0.0:9090
+ipv6: true
 dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: true
+  default-nameserver:
+    - 114.114.114.114
     - 223.5.5.5
+  enhanced-mode: redir-host
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+    - 223.5.5.5
 
 proxies:
   - {"name":"洛杉矶1","type":"hysteria","server":"173.234.25.51","port":42479,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongadlkdjafidjdfaodfadfdf","up":11,"down":55}
